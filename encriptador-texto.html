@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/imagenes/Logo.png" alt="logo de alura">
+        <h1><strong class="titulo-destacado">ENCRIPTADOR DE TEXTO</strong></h1>
+    </header>
+    <main>
+        <section class="ingrese-texto">
+            <textarea class="text-area" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h2 class="informacion">Solo letras minúsculas y sin acentos</h2>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncripar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencripar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion-copiar">
+            <textarea class="mensaje" id="" cols="20" rows="10"></textarea>
+            <div class="contenedor-parrafo">
+                <h3 class=" titulo-mensaje">Ningún mensaje fue encontrado</h3>
+                <p class="parrafo-mensaje">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="div-boton">
+                    <button class="copiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <hr class="hr">
+        <p class="mensaje-footer"><strong>Desarrollado por Jose Corredor</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

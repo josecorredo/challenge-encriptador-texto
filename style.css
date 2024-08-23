@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    padding:0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #F5EDED;
+    color: #6482AD;
+}
+header{
+    background-color: #E2DAD6;
+    color: #E2E2B6;
+    border: 2px solid #E2DAD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: auto;
+    
+}
+.logo{
+    width: 120px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    }
+.titulo-destacado{
+    color: #6482AD;
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo-mensaje{
+    color: #6482AD;
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    width: 90%;
+    height: 75%;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    gap: 5%;
+}
+.ingrese-texto{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 24px 0;
+    align-items: center;
+    position: relative;
+}
+
+.parrafo-mensaje{
+    color: #6482AD;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-area{
+    background-color: #E2DAD6;
+    border: 2px solid #E2DAD6;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    color: #6482AD;
+    text-transform: lowercase;
+    cursor: pointer;
+    resize: none;
+}
+::placeholder { color: #6482AD; }
+    .text-area:focus {
+        outline:none;
+    }
+
+.informacion{
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 2%;
+    color: #6482AD;
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3%;
+    padding: 1%;
+    margin-top: 5px;
+}
+
+.btn-encriptar{
+    background-color: #6482AD;
+    border: 2px solid #E2DAD6;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #E2DAD6;
+    position: relative;
+}
+
+.btn-desencriptar{
+    background-color: #6482AD;
+    border: 2px solid #E2DAD6;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #E2DAD6;
+    position: relative;
+}
+.btn-encriptar:hover, .btn-desencriptar:hover{
+    margin: 0.3%;
+}
+
+.seccion-copiar{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px 0;
+    align-items: center;
+    position: relative;
+    
+}
+.mensaje{
+    background-color: #E2DAD6;
+    border: 2px solid #E2DAD6;
+    background-image: url(imagenes/encriptado.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85% 130%;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    color: #6482AD;
+    resize: none;
+}
+.mensaje:focus {
+    outline:none;
+}
+.contenedor-parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1%;
+    font-size: 1rem;
+}
+.div-boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.copiar{
+    background-color: #6482AD;
+    border: 2px solid #E2DAD6;
+    width: 50%;
+    text-align: center;
+    margin-top: 29px;
+    padding: 20px 0;
+    border-radius: 24px;
+    margin-top: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #E2DAD6;
+    position: relative;
+}
+.copiar:hover{
+    background-color: #E2DAD6;
+    color: #6482AD ;
+}
+
+.footer{
+
+    background-color: #6482AD;
+    color: #E2DAD6;
+    padding: auto;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mensaje-footer {
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1%;
+}
+
+
+
+/*
+.hr{
+    background-color: #E2E2B6;
+    height:3px;
+    border: none;
+    margin-bottom: 2px;
+}
+
+/* Responsivo */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+    .text_area,
+    .mensaje,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 130px;
+        margin: 0%;
+        align-items: center;
+    }
+
+    .footer {
+        font-size: 1.4rem;
+        margin: 1%;
+    }
+}
+
+/* Responsivo 2 */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .ingrese-texto,
+    .seccion-copiar {
+        height: 100%;
+    }
+
+    .text_area,
+    .mensaje,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .footer {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Dispositivos móviles y tablets en modo vertical */
+@media (max-width: 767px) {
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ingrese-texto,
+    .seccion-copiar {
+        width: 85%;
+    }
+
+    .text-area,
+    .mensaje,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 1.2rem;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .footer {
+
+        font-size: 1.2rem;
+        padding: 3%;
+    }
+}
+
+/* Dispositivos móviles muy pequeños */
+@media (max-width: 480px) {
+    .ingrese-texto,
+    .seccion-copiar {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .titulo-destacado,
+    .text_area,
+    .mensaje,
+    .contenedor-parrafo,
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 1rem;
+        padding: 3%;
+    }
+}
